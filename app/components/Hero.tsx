@@ -16,6 +16,8 @@ export default function Hero() {
 
   return (
     <div className="bg-white min-h-screen relative">
+
+      {/* Menu */}
       <header className="absolute inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl">
           <div className="px-6 pt-6 lg:max-w-2xl lg:pr-0 lg:pl-8">
@@ -106,26 +108,26 @@ export default function Hero() {
             <div className="relative px-6 min-h-screen flex items-center sm:py-40 lg:px-8 lg:py-0 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex">
-                  <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Orçe seu frete agora mesmo sem compromisso.{' '}
+                  <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20" data-aos="fade-right">
+                    Obtenha seu orçamento de frete agora mesmo!{' '}
                     <a 
                       href="https://web.whatsapp.com/send?phone=5511985148306&text=Olá, gostaria de mais informações sobre seus serviços" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold whitespace-nowrap text-red-600"
+                      className="font-semibold whitespace-nowrap text-red-600 ml-2"
                     >
                       <span aria-hidden="true" className="absolute inset-0" />
                       Solicitar orçamento <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
                 </div>
-                <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900">
+                <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900" data-aos="fade-right">
                   WTrindade Transportes
                 </h1>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8" data-aos="fade-right">
                   Uma empresa dedicada a oferecer soluções logísticas completas, garantindo segurança e eficiência no transporte de cargas.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
+                <div className="mt-10 flex items-center gap-x-6" data-aos="fade-right">
                   <a
                     href="https://web.whatsapp.com/send?phone=5511985148306&text=Olá, gostaria de mais informações sobre seus serviços"
                     target="_blank"
