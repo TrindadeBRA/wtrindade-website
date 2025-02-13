@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import Head from "next/head";
-
+import { DM_Serif_Text } from "next/font/google";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const dmSerifText = DM_Serif_Text({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: "WTrindade Transportes",

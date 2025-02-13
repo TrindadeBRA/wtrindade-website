@@ -122,10 +122,10 @@ export default function Hero() {
                     </a>
                   </div>
                 </div>
-                <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900" data-aos="fade-right">
+                <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900 font-serifText" data-aos="fade-right">
                   WTrindade Transportes
                 </h1>
-                <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8" data-aos="fade-right">
+                <p className="mt-8 text-lg font-medium text-pretty text-gray-500" data-aos="fade-right">
                   Uma empresa dedicada a oferecer soluções logísticas completas, garantindo segurança e eficiência no transporte de cargas.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6" data-aos="fade-right">
