@@ -142,7 +142,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="-mt-[100px] sm:mt-0 bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" data-aos="zoom-out-left">
+        <div className="-mt-[100px] sm:mt-0 bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" data-aos="fade-in">
           <Image
             width={1920}
             height={1080}

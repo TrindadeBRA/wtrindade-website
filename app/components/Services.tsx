@@ -41,7 +41,7 @@ export default function Services() {
               <div 
                 key={feature.name} 
                 className="flex flex-col"
-                data-aos={feature.name === 'Transporte Regional' ? 'fade-right' : 'fade-left'}
+                data-aos={"fade-in"}
               >
                 <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
                   <feature.icon aria-hidden="true" className="size-5 flex-none text-red-600" />
