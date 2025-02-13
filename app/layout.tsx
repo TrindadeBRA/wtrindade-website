@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,15 @@ export const metadata: Metadata = {
     icon: '/assets/icons/favicon.ico',
     apple: '/assets/images/logo.png',
   },
+  openGraph: {
+    images: '/assets/images/ogimage.webp',
+    title: "WTrindade Transportes",
+    description: "Oferecemos soluções logísticas completas, garantindo segurança e eficiência no transporte de cargas.",
+    url: 'https://wtrindadetransportes.com.br',
+    siteName: "WTrindade Transportes",
+    locale: "pt-BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <Head>
+        <link rel="icon" href="/assets/icons/favicon.ico" sizes="any" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
