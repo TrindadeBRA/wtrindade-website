@@ -1,4 +1,5 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid'
+import { useState } from 'react'
 
 const features = [
   {
@@ -15,6 +16,8 @@ const features = [
 ]
 
 export default function Location() {
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32" id="contato">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
@@ -42,11 +45,24 @@ export default function Location() {
             </div>
           </div>
           <div className="sm:px-6 lg:px-0" data-aos="fade-left">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3705810099073!2d-46.58120752393279!3d-23.51917017882885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f29e8cd2745%3A0xb12463c0f7c8a26d!2sWTrindade%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1739409276075!5m2!1spt-BR!2sbr" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-              className="-mb-12 !w-full max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
-              width={1920}
-              height={350}
-            ></iframe>
+            <div className="relative">
+              {!isMapLoaded && (
+                <div className="absolute inset-0 animate-pulse bg-gray-200 rounded-tl-xl" />
+              )}
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3705810099073!2d-46.58120752393279!3d-23.51917017882885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f29e8cd2745%3A0xb12463c0f7c8a26d!2sWTrindade%20Transportes!5e0!3m2!1spt-BR!2sbr!4v1739409276075!5m2!1spt-BR!2sbr"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className={`-mb-12 !w-full max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10 ${
+                  !isMapLoaded ? 'invisible' : ''
+                }`}
+                width={1920}
+                height={350}
+                onLoad={() => setIsMapLoaded(true)}
+              />
+            </div>
           </div>
         </div>
       </div>
