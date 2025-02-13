@@ -15,7 +15,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white min-h-screen relative">
+    <div className="bg-white relative">
 
       {/* Menu */}
       <header className="absolute inset-x-0 top-0 z-50">
@@ -43,7 +43,7 @@ export default function Hero() {
               </button>
               <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+                  <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:text-red-600 hover:border-b-2 hover:border-red-600">
                     {item.name}
                   </a>
                 ))}
@@ -52,15 +52,15 @@ export default function Hero() {
           </div>
         </div>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="fixed inset-0 z-50 bg-black/30" />
+          <DialogPanel className="fixed inset-y-0 left-0 z-50 w-64 overflow-y-auto bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Sua Empresa</span>
                 <Image
                   alt=""
-                  src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=red&shade=600"
-                  className="h-8 w-auto"
+                  src="/assets/images/logo.png"
+                  className="h-12 w-12"
                   width={100}
                   height={100}
                 />
@@ -81,6 +81,7 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -108,7 +109,7 @@ export default function Hero() {
             <div className="relative px-6 min-h-screen flex items-center sm:py-40 lg:px-8 lg:py-0 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex">
-                  <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20" data-aos="fade-right">
+                  <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20 hover:bg-red-500/5 transition duration-300 ease-in-out" data-aos="fade-right">
                     Obtenha seu orçamento de frete agora mesmo!{' '}
                     <a 
                       href="https://web.whatsapp.com/send?phone=5511985148306&text=Olá, gostaria de mais informações sobre seus serviços" 
@@ -136,15 +137,12 @@ export default function Hero() {
                   >
                     Entrar em contato!
                   </a>
-                  {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                    Saiba mais <span aria-hidden="true">→</span>
-                  </a> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="-mt-[100px] sm:mt-0 bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" data-aos="zoom-out-left">
           <Image
             width={1920}
             height={1080}

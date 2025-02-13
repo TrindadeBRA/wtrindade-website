@@ -10,7 +10,7 @@ export default function Footer() {
                         <Image
                             alt="WTrindade Transportes"
                             src="/assets/images/logo.png"
-                            className="h-32 w-auto animate-spin-slow hover:duration-[1000ms]"
+                            className="h-32 w-auto animate-spin-slow"
                             width={250}
                             height={250}
                         />
@@ -29,15 +29,16 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="container mx-auto">
-                    <div className="mt-16 border-t border-gray-900/10 py-8 flex justify-between">
-                        <p className="text-sm/6 text-gray-600">&copy; {new Date().getFullYear()}
-                            <span className="font-semibold pl-1">WTrindade Transportes</span>.
-                            Todos os direitos reservados.</p>
-                        <p className="text-sm/6 text-gray-600">Desenvolvido por
+                    <div className="mt-16 border-t border-gray-900/10 py-8 flex flex-col sm:flex-row sm:justify-between items-center text-sm/6 text-gray-600">
+                        <span className="text-sm/6 text-gray-600 text-center sm:text-left">&copy; {new Date().getFullYear()}
+                            <span className="font-semibold pl-1">WTrindade Transportes</span>
+                            <span className="text-sm/6 text-gray-600">Todos os direitos reservados.</span>
+                        </span>
+                        <span className="mt-4 sm:mt-0 text-sm/6 text-gray-600 text-center">Desenvolvido por
                             <a href="https://thetrinityweb.com.br" className="ml-1 text-red-700 hover:text-red-600 font-semibold">Trinity Web</a>.
-                        </p>
+                        </span>
                     </div>
-                </div>    
+                </div>
             </div>
         </footer>
     )

@@ -45,7 +45,7 @@ export default function AboutUs() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10" data-aos="fade-left">
                 <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src="/assets/images/caminhao.webp"
                   className="block size-full object-cover"
                   width={560}
                   height={560}
@@ -54,7 +54,7 @@ export default function AboutUs() {
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40" data-aos="fade-left">
                 <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src="/assets/images/pallets.webp"
                   className="block size-full object-cover"
                   width={560}
                   height={560}
@@ -63,7 +63,7 @@ export default function AboutUs() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10" data-aos="fade-left">
                 <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src="/assets/images/empilhadeira.webp"
                   className="block size-full object-cover"
                   width={560}
                   height={560}
@@ -72,7 +72,7 @@ export default function AboutUs() {
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40" data-aos="fade-left">
                 <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src="/assets/images/galpao.webp"
                   className="block size-full object-cover"
                   width={560}
                   height={560}
