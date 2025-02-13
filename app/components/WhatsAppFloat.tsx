@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function WhatsAppFloat() {
     return (
         <Link href="https://web.whatsapp.com/send?phone=5511985148306&text=Olá, gostaria de mais informações sobre seus serviços." target="_blank" rel="noopener noreferrer">
-            <div className="fixed bottom-0 right-0 m-4 z-50 bg-red-700 rounded-full p-4 border-4 border-white shadow-2xl animate-bounce">
+            <div className="fixed bottom-0 left-0 sm:left-auto sm:right-0 m-4 z-50 bg-red-700 rounded-full p-4 border-4 border-white shadow-2xl animate-bounce">
                 <svg fill="#fff" height="28px" width="28px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 308 308" xmlSpace="preserve">
                     <g id="XMLID_468_">
