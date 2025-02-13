@@ -45,7 +45,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/icons/favicon.ico" sizes="any" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSerifText} antialiased relative`}
       >
         {children}
         <WhatsAppFloat />
