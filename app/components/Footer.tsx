@@ -31,7 +31,8 @@ export default function Footer() {
                 <div className="container mx-auto">
                     <div className="mt-16 border-t border-gray-900/10 py-8 flex flex-col sm:flex-row sm:justify-between items-center text-sm/6 text-gray-600">
                         <span className="text-sm/6 text-gray-600 text-center sm:text-left">&copy; {new Date().getFullYear()}
-                            <span className="font-semibold pl-1">WTrindade Transportes</span>
+                            <span className="font-semibold pl-1">WTrindade Transportes. {" "}</span>
+                            <br className="block sm:hidden" />
                             <span className="text-sm/6 text-gray-600">Todos os direitos reservados.</span>
                         </span>
                         <span className="mt-4 sm:mt-0 text-sm/6 text-gray-600 text-center">Desenvolvido por
